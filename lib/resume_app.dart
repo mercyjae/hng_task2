@@ -11,7 +11,7 @@ class ResumeApp extends StatefulWidget {
 }
  
 class _ResumeAppState extends State<ResumeApp> {
-  int selectedIndex = 0;
+
   void _handleURLButtonPress(
     BuildContext context,
     String url,
@@ -31,7 +31,7 @@ class _ResumeAppState extends State<ResumeApp> {
         children: [
           Stack(
             children: [
-              Container(
+              const SizedBox(
                 height: 350,
                 width: double.infinity,
               ),
@@ -121,9 +121,9 @@ class _ResumeAppState extends State<ResumeApp> {
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
                 ),
                 Row(
-                  children: [
-                    const Icon(Icons.location_on),
-                    const Text(
+                  children: const [
+                    Icon(Icons.location_on),
+                     Text(
                       "Lagos, Nigeria",
                       style:
                           TextStyle(fontWeight: FontWeight.w400, fontSize: 15),
@@ -165,21 +165,21 @@ class _ResumeAppState extends State<ResumeApp> {
                     ElevatedButton(
                         style: ElevatedButton.styleFrom(
                           minimumSize: const Size(100, 40),
-                          backgroundColor: selectedIndex == 0 ? const Color(0xFFFA624F) : Colors.white,
+                          backgroundColor: const Color(0xFFFA624F),
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(10)),
                         ),
                         child: const Text("Chat"),
-                        onPressed: () {selectedIndex == 0;}),
+                        onPressed: () {}),
                     ElevatedButton(
                         style: ElevatedButton.styleFrom(
                           minimumSize: const Size(100, 40),
-                          backgroundColor:selectedIndex == 1? Colors.white: const Color(0xFFFA624F),
+                          backgroundColor:const Color(0xFFFA624F),
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(10)),
                         ),
                         child: const Text("Message"),
-                        onPressed: () {selectedIndex == 1;}),
+                        onPressed: () {}),
                   ],
                 ),
               ],

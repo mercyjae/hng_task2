@@ -34,12 +34,11 @@ class WebViewPageState extends State<WebViewPage> {
   Widget build(BuildContext context) {
     return Scaffold(
         body: SafeArea(
-          child: Column(children: [
-              Expanded(
+      child: Column(children: [
+        Expanded(
             child: WebView(
-                initialUrl: url,
-                javascriptMode: JavascriptMode.unrestricted))
-            ]),
-        ));
+                initialUrl: url, javascriptMode: JavascriptMode.unrestricted))
+      ]),
+    ));
   }
 }
