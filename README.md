@@ -1,16 +1,16 @@
-# hng_task2
 
-A new Flutter project.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+Description of the app: A simple resume app built with flutter. It shows what I'm capable of doing and my bio. I linked my social media handles to the application. You can reach out to me via the app. 
 
-A few resources to get you started if this is your first Flutter project:
+webview_flutter: Flutter plugin for launching a URL.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Features I would love to add: Dark mode which automatically adapts to system theme.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+Apk link: 
+
+Appetize link : https://appetize.io/app/gvlmp2umwxhwxg7vz6y2iz7rsa?device=pixel4&osVersion=11.0&scale=75
+
+App demo: 
+![WhatsApp Image 2022-11-06 at 1 19 46 AM](https://user-images.githubusercontent.com/83911888/200161032-2eead4fe-0f82-4e9a-b1ec-2341d8e3a326.jpeg)
