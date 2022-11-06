@@ -1,7 +1,5 @@
-
 import 'package:flutter/material.dart';
 import 'package:hng_task2/web_view_page.dart';
-
 
 class ResumeApp extends StatefulWidget {
   const ResumeApp({Key? key}) : super(key: key);
@@ -9,9 +7,8 @@ class ResumeApp extends StatefulWidget {
   @override
   State<ResumeApp> createState() => _ResumeAppState();
 }
- 
-class _ResumeAppState extends State<ResumeApp> {
 
+class _ResumeAppState extends State<ResumeApp> {
   void _handleURLButtonPress(
     BuildContext context,
     String url,
@@ -32,16 +29,16 @@ class _ResumeAppState extends State<ResumeApp> {
           Stack(
             children: [
               const SizedBox(
-                height: 350,
+                height: 280,
                 width: double.infinity,
               ),
               Container(
-                height: 200,
+                height: 160,
                 width: double.infinity,
                 color: const Color(0xFFFA624F),
               ),
               Positioned(
-                top: 120,
+                top: 60,
                 left: 15,
                 right: 15,
                 child: Material(
@@ -56,7 +53,7 @@ class _ResumeAppState extends State<ResumeApp> {
                 ),
               ),
               Positioned(
-                  top: 75,
+                  top: 25,
                   left: 120,
                   child: Container(
                       height: 100,
@@ -69,13 +66,13 @@ class _ResumeAppState extends State<ResumeApp> {
                             fit: BoxFit.cover),
                       ))),
               Positioned(
-                top: 190,
-                left: (MediaQuery.of(context).size.width / 2) - 80.0,
+                top: 140,
+                left: (MediaQuery.of(context).size.width / 2) - 120.0,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     const Text(
-                      "Anuoluwapo Famakinwa",
+                      "Anuoluwapo Famakinwa (mercyjae)",
                       style:
                           TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
                     ),
@@ -123,7 +120,7 @@ class _ResumeAppState extends State<ResumeApp> {
                 Row(
                   children: const [
                     Icon(Icons.location_on),
-                     Text(
+                    Text(
                       "Lagos, Nigeria",
                       style:
                           TextStyle(fontWeight: FontWeight.w400, fontSize: 15),
@@ -136,7 +133,6 @@ class _ResumeAppState extends State<ResumeApp> {
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
                 ),
                 Row(children: [
-      
                   BuildLogo(
                       'assets/twitter.png', 'https://twitter.com/_mercyjae'),
                   BuildLogo('assets/linkedin.png',
@@ -150,14 +146,26 @@ class _ResumeAppState extends State<ResumeApp> {
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
                 ),
                 const Text(
-                  "I'm an active, dynamic mobile developer (flutter and dart), "
-                  "capable of creating excellent analytical skills with good problem-solving attitude'"
+                  "I'm a mobile developer and a computer student of Lagos State University."
+                  "I'm  passionate about  technology and problem solving in general. As a female-in-tech advocate,"
+                  " I'm  sparked about onboarding females into the tech system.",
+                  style: TextStyle(fontWeight: FontWeight.w400, fontSize: 15),
+                ),
+                 const SizedBox(
+                  height: 10,
+                ),
+                const Text(
+                  "WHAT I CAN DO",
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+                ),
+                const Text(
+                  "I'm capable of creating excellent analytical skills with good problem-solving attitude'"
                   " and who is able to  perform in a team environment of talented IT professional in "
                   "creating mobile apps to the highest standards.",
                   style: TextStyle(fontWeight: FontWeight.w400, fontSize: 15),
                 ),
                 const SizedBox(
-                  height: 30,
+                  height: 20,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -174,7 +182,7 @@ class _ResumeAppState extends State<ResumeApp> {
                     ElevatedButton(
                         style: ElevatedButton.styleFrom(
                           minimumSize: const Size(100, 40),
-                          backgroundColor:const Color(0xFFFA624F),
+                          backgroundColor: const Color(0xFFFA624F),
                           shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(10)),
                         ),
@@ -234,4 +242,3 @@ class _ResumeAppState extends State<ResumeApp> {
     );
   }
 }
-
