@@ -3,7 +3,7 @@
 
 Description of the app: A simple resume app built with flutter. It shows what I'm capable of doing and my bio. I linked my social media handles to the application. You can reach out to me via the app. 
 
-webview_flutter: Flutter plugin for launching a URL.
+Package used: webview_flutter. It's a flutter plugin for launching a URL.
 
 Features I would love to add: Dark mode which automatically adapts to system theme.
 
